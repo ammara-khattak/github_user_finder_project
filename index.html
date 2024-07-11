@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITHUB PROFILE FINDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section class="main">
+    <form onsubmit="searchprofile(event)">
+        <input id="userInput" type="text" required placeholder="enter username">
+        <button type="submit">search</button>
+    </form>
+    <h1 id="error"></h1>
+    <img class="hidden" src="images/person (1).png" id="notfound" alt="">
+
+    <div  class="lds-ring hidden" id="loader"><div></div><div></div><div></div><div></div></div>
+    <div class="card">
+        <div class="card-top">
+            <img src="https://avatars.githubusercontent.com/u/87271147?v=4"  alt="">
+            <div>
+                <h2>Username</h2>
+                <h2>Name</h2>
+                <h2>0 Followers</h2>
+                <h2>0 Following</h2>
+            </div>
+        </div>
+        <div class="card-bottom">
+            <h1>Do something to express yourself not to impress others</h1>
+           <div class="flex"><a href="">Visit Profile</a>
+            <p>repositories : 3</p></div> 
+        </div>
+        </div>
+        
+
+   </section>
+   <script src="app.js"></script>
+</body>
+</html>
